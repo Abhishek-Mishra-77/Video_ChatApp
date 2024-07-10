@@ -81,6 +81,7 @@ const ContextProvider = ({ children }) => {
 
   const leaveCall = () => {
     setCallEnded(true);
+    console.log("Somehitng");
 
     if (connectionRef.current) {
       connectionRef.current.destroy();

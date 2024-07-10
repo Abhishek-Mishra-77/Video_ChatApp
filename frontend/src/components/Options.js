@@ -1,5 +1,5 @@
 import React, { useContext, useState } from "react";
-import CopyToClipboard, { copyToClipboard } from "react-copy-to-clipboard";
+import CopyToClipboard from "react-copy-to-clipboard";
 import { SocketContext } from "../SocketContext";
 
 const Options = ({ children }) => {
@@ -9,8 +9,7 @@ const Options = ({ children }) => {
   const [idToCall, setIdToCall] = useState("");
 
   return (
-    <div className="mt-8 float-left">
-      options
+    <div className="mt-12 float-left">
       <div className="flex flex-col">
         <div className="flex justify-between p-4 border-2 w-[500px] h-40 bg-white">
           <div className="flex flex-col gap-4">
